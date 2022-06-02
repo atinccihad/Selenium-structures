@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!--belirlenen gruplari calistirmadan once istedigimiz test methodlarina 
+    belirledigimiz grup isimlerini eklemeliyiz
+    bir test methodunun birden fazla grubu olabilir
+    gruplari calistirirken 2 kriterimiz var
+    1- hangi gruplar include veya exclude olacak
+    2- bu gruplari nerede arayacagiz-->
+
+<suite name="grup calistirma">
+    <test name="mini regression">
+        <!--test seviyesinden sonra iki hiyerarsi olusturacagiz
+          bir tanesi gruplari belirlerken
+          digeri bu gruplarin hangi package'larda aranacagini gosterecek-->
+        <groups>
+            <run>
+                <include name="miniRegression"></include>
+                <exclude name="smoke"></exclude>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.day16"></package>
+            <package name="tests.day17"></package>
+            <package name="tests.day18"></package>
+            <package name="tests.day19"></package>
+        </packages>
+    </test>
+</suite>
