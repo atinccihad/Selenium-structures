@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="tum packageleri calistirma">
+    <test name="tum testler">
+        <packages>
+            <package name=".*"></package>
+        </packages>
+    </test>
+</suite>
