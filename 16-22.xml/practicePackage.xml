@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="package calistirma" verbose="5"><!--cnsoldaki testin aciklamadaki satir sayisi-->
-    <test name="smoke test">
-        <packages>
-            <package name="tests.practice"></package>
-        </packages>
-           
-    </test>
-</suite>
