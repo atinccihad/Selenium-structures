@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 81.269 sec <<< FAILURE!
+test(tests.practice.P3_TutorialTest)  Time elapsed: 6.783 sec  <<< FAILURE!
+java.lang.AssertionError: Lists differ at element [0]: [[ChromeDriver: chrome on WINDOWS (4be7d0228f8b8ee4ead549035e192a62)] -> xpath: //td[@class='text-left']] != [[ChromeDriver: chrome on WINDOWS (4be7d0228f8b8ee4ead549035e192a62)] -> tag name: h4] expected [[[ChromeDriver: chrome on WINDOWS (4be7d0228f8b8ee4ead549035e192a62)] -> xpath: //td[@class='text-left']]] but found [[[ChromeDriver: chrome on WINDOWS (4be7d0228f8b8ee4ead549035e192a62)] -> tag name: h4]]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:1479)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at tests.practice.P3_TutorialTest.test(P3_TutorialTest.java:41)
+
