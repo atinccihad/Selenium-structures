@@ -14,15 +14,16 @@ Scenario:  TC02_Amazon iPhone Search testi
 
     @wip
   Scenario:  TC02_Amazon tea pot Search testi
-
-
     Given kullanici amazon sayfasina gider
     And tea pot icin arama yapar
     Then sonuclarin tea pot icerdigini test eder
 
-  Scenario:  TC02_Amazon flower Search testi
+  @toplu
+  Scenario: TC03_Amazon tea pot Search Testi
+    And tea pot icin arama yapar
+    Then sonuclarin tea pot icerdigini test eder
 
-
+  Scenario:  TC04_Amazon flower Search testi
     Given kullanici amazon sayfasina gider
     And flower icin arama yapar
     Then sonuclarin flower icerdigini test eder

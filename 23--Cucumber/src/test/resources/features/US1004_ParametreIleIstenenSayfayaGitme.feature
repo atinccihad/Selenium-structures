@@ -5,6 +5,7 @@ Feature: Parametre ile istenen sayafaya gitme
   Given kullanici amazon sayfasina gider
    # Then kullanici techpreducation sayfasina gider
 
+  @parUrl
   Scenario: TC07 parametre ile istenen sayfaya gitme
 
     Given kullanici "BestbuyUrl" sayfasina gider

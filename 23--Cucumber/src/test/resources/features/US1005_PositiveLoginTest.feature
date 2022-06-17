@@ -10,3 +10,5 @@ Feature: US1005 Positive login testi
     And login butonuna basar
     Then basarili olarak giris yapildigini test eder
     And sayfayi kapatir
+
+
