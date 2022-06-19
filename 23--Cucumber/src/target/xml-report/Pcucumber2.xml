@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="65.837">
+    <testcase classname="US1002 Background ile amazon testi" name="TC02_Amazon iPhone Search testi" time="20.03">
+        <system-out><![CDATA[Given kullanici amazon sayfasina gider......................................passed
+Given kullanici amazon sayfasina gider......................................passed
+And iPhone icin arama yapar.................................................passed
+Then sonuclarin iPhone icerdigini test eder.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1002 Background ile amazon testi" name="TC02_Amazon tea pot Search testi" time="15.746">
+        <system-out><![CDATA[Given kullanici amazon sayfasina gider......................................passed
+Given kullanici amazon sayfasina gider......................................passed
+And tea pot icin arama yapar................................................passed
+Then sonuclarin tea pot icerdigini test eder................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1002 Background ile amazon testi" name="TC03_Amazon tea pot Search Testi" time="13.747">
+        <system-out><![CDATA[Given kullanici amazon sayfasina gider......................................passed
+And tea pot icin arama yapar................................................passed
+Then sonuclarin tea pot icerdigini test eder................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1002 Background ile amazon testi" name="TC04_Amazon flower Search testi" time="15.748">
+        <system-out><![CDATA[Given kullanici amazon sayfasina gider......................................passed
+Given kullanici amazon sayfasina gider......................................passed
+And flower icin arama yapar.................................................passed
+Then sonuclarin flower icerdigini test eder.................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
