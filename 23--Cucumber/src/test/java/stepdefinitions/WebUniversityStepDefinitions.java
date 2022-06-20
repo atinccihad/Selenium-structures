@@ -1,6 +1,5 @@
 package stepdefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -10,7 +9,7 @@ import pages.WebUniversityPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class WeUniversityStepDefinitions {
+public class WebUniversityStepDefinitions {
 
     WebUniversityPage webUniversityPage=new WebUniversityPage();
 
