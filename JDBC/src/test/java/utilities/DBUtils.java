@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 
 public class DBUtils {
-
     private static Connection connection;
     private static Statement statement;
     private static ResultSet resultSet;
@@ -27,7 +26,6 @@ public class DBUtils {
             e.printStackTrace();
         }
     }
-
     //BU METHODU COK KULLANACAGIZ
     //Bu method DatabaDBUTilsse e baglandiktan sonra Yazilan query yi calistirmak icin
     //Bu method da statement ve resultset objesini olusturup query run ediyoruz
