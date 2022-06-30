@@ -26,7 +26,6 @@ public class DBUtils {
             e.printStackTrace();
         }
     }
-
     //BU METHODU COK KULLANACAGIZ
     //Bu method DatabaDBUTilsse e baglandiktan sonra Yazilan query yi calistirmak icin
     //Bu method da statement ve resultset objesini olusturup query run ediyoruz
