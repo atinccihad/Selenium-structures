@@ -46,13 +46,11 @@ public class DBUtilStepDefinitions {
 
     }
 
-    @Then("DBUtill ile {int}. {string} in {int} oldugunu test eder")
-    public void db_utill_ile_in_oldugunu_test_eder(Integer siraNo, String field, Integer expectedPrice) throws SQLException {
-
+    @Then("DBUtill ile {int}. {string} in {int}  oldugunu test eder")
+    public void dbutillIleInOldugunuTestEder(int siraNo, String field, int expectedPrice) throws SQLException {
         DBUtils.getResultset().absolute(siraNo);
         double actualPrice = DBUtils.getResultset().getDouble(field);
         Assert.assertTrue(actualPrice == expectedPrice);
-
     }
 
     @Then("tHotel tablosunda IDHotel degeri {int} olan kaydin Email bilgisini {string} yapar")
@@ -63,6 +61,5 @@ public class DBUtilStepDefinitions {
         String updateQuery = "UPDATE tHOTEL SET Email='" + yeniEmail + "' from WHERE IDHotel='" + IDHotel + "';";
 
         DBUtils.executeQuery(updateQuery);
-
     }
 }
