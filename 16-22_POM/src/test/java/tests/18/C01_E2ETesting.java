@@ -1,16 +1,15 @@
-package tests.day18;
+package tests.i18;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HotelMyCampPage;
 import utilities.Driver;
 
-// 1. C01_E2ETesting
 public class C01_E2ETesting {
-
     @Test
     public void test01(){
         // 2. Bir method  olusturun: createHotel
@@ -30,6 +29,10 @@ public class C01_E2ETesting {
         Actions actions=new Actions(Driver.getDriver());
         Faker faker=new Faker();
         actions.click(hotelMyCampPage.addHotelCodeKutusu)
+                .sendKeys(faker.name().firstName())
+                .sendKeys(Keys.TAB)
+                .sendKeys(faker.name().name())
+                .sendKeys(Keys.TAB)
                 .sendKeys(faker.address().zipCode())
                 .sendKeys(Keys.TAB)
                 .sendKeys(faker.name().name())
@@ -49,6 +52,9 @@ public class C01_E2ETesting {
         hotelMyCampPage.bekle(2);
 
         // 9. "Hotel was inserted successfully" textinin gorundugunu test edin.
+        Assert.assertTrue(hotelMyCampPage.hotelWasInsertedSuccessfullyAlertYazisi.isDisplayed());
+
         // 10. OK butonuna tiklayin.
+        Driver.getDriver().switchTo().activeElement().click();
     }
 }
