@@ -1,6 +1,7 @@
 package dbStepdefinitions;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -92,5 +93,6 @@ public class StepDefinitions {
 
         System.out.println(priceList);
     }
+
 
 }
