@@ -1,0 +1,3 @@
+2022-10-15 22:54:18,500 INFO t.i.C01_ScreenShot_ReusableMethods [main] hepsiburada sitesine gidilir
+2022-10-15 22:54:48,295 INFO t.i.C01_ScreenShot_ReusableMethods [main] ekran goruntusu alinir
+2022-10-15 22:54:49,670 WARN t.i.C01_ScreenShot_ReusableMethods [main] Driver closed

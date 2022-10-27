@@ -10,24 +10,46 @@ import java.util.List;
 
 public class DemoGuruPage {
     public DemoGuruPage() {
+
         PageFactory.initElements(Driver.getDriver(), this);
+
     }
 
+    @FindBy(xpath = "(//thead//tr//th)[1]")
+    public WebElement company;
+
+    @FindBy(xpath = "(//thead//tr//th)[2]")
+    public WebElement group;
+
+    @FindBy(xpath = "(//thead//tr//th)[3]")
+    public WebElement prevClose;
+
+    @FindBy(xpath = "(//thead//tr//th)[1]")
+    public WebElement currentPrice;
+
+    @FindBy(xpath = "(//thead//tr//th)[1]")
+    public WebElement change;
+
+    @FindBy(xpath = "//table//tbody//tr")
+    public WebElement satirlar;
+
     @FindBy(xpath = "//thead//tr//th")
-    public List<WebElement> baslikWebelementListesi;
+    public List<WebElement> basliklarList;
 
-    @FindBy(xpath = "//iframe[@class='faktor-iframe-wrapper']")
-    public WebElement iframe;
+    @FindBy(xpath = "//table[@class='dataTable']/tbody/tr")
+    public List<WebElement> rowList;
 
+    @FindBy(xpath = "//table[@class='dataTable']/tbody/tr/td")
+    public List<WebElement> cell;
 
-    public List<WebElement> sutunListesiGetir(int index) {
-        //    //tbody//tr//td[3]
-
-        String dinamikXpath = "//tbody//tr//td[" + (index + 1) + "]";
-
-        List<WebElement> istenenSutunWebelementleri = Driver.getDriver().findElements(By.xpath(dinamikXpath));
-
-        return istenenSutunWebelementleri;
+    public void istenenCell(int istenenCellNumber) {
+        String dinamikXpath;
+        int rowNumber = rowList.size();
+        for (int i = 1; i <= rowNumber; i++) {
+            dinamikXpath = "(//table[@class='dataTable']/tbody/tr[" + i + "]/td[" + istenenCellNumber + "])";
+            WebElement istenenDeger = Driver.getDriver().findElement(By.xpath(dinamikXpath));
+            System.out.println(istenenDeger.getText());
+        }
     }
 
 

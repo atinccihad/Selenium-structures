@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.861">
-    <testcase classname="US1014 Dinamik Elemanlar" name="TC19 Dinamik elementler tiklanabilmeli" time="12.436">
-        <system-out><![CDATA[Given kullanici "DemoQaUrl" sayfasina gider.................................passed
-Then Will enable 5 seconds butonunun enable olmasini bekler.................passed
-And Will enable 5 seconds butonunun enable oldugunu test eder...............passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.459">
+    <testcase classname="Form doldurma" name="Practice form doldurma" time="0.24">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given Kullanici "https://testpages.herokuapp.com/styled/basic-html-form-test.html" adresine gider.undefined
+When username "kullanici adi" password "sifre" ve textarea "metin alani" kisimlarini doldurur.skipped
+And bir dosya yukler........................................................skipped
+And checkbox1 i secer.......................................................skipped
+And radio2 yi secer.........................................................skipped
+And selection item3 secer...................................................skipped
+And dropdown itmem4 secer...................................................skipped
+And submite tiklar..........................................................skipped
+Then dosyanin yuklendigini dogrular.........................................skipped
+]]></failure>
     </testcase>
 </testsuite>

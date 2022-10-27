@@ -1,4 +1,5 @@
 package runners;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -9,7 +10,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/Pcucumber2.xml"},
         features="src/test/resources/features",
         glue = "stepdefinitions",
-        tags="@paralel2",
+        tags="@websss",
         dryRun = false
 )
 public class ParalelTestRunner2 {

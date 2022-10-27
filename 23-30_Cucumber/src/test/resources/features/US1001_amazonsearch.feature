@@ -1,15 +1,23 @@
-Feature: US1001_amazonsearch
+@All
+Feature: Amazon Search
 
-  @toplu  @paralel1
-  Scenario: TC01_Amazon Search Testi
-    Given kullanici amazon sayfasina gider
-    And iPhone icin arama yapar
-    Then sonuclarin iPhone icerdigini test eder
+  @gp1
+  Scenario: TC01 kullanici amazonda kelime aratir
+    Given kullanici amazon anasayfasina gider
+    Then  kullanici Nutella icin arama yapar
+    And kullanici sonuclarin Nutella icerdigini test eder
+   # And kullanici sayfayi kapatir
 
-    Given kullanici amazon sayfasina gider
-    And tea pot icin arama yapar
-    Then sonuclarin tea pot icerdigini test eder
+  @gp3
+  Scenario: TC02 kullanici amazonda kelime aratir
+    Given kullanici amazon anasayfasina gider
+    Then  kullanici Selenium icin arama yapar
+    And kullanici sonuclarin Selenium icerdigini test eder
+    # And kullanici sayfayi kapatir
 
-    Given kullanici amazon sayfasina gider
-    And flower icin arama yapar
-    Then sonuclarin flower icerdigini test eder
+  @gp2
+  Scenario: TC03 kullanici amazonda kelime aratir
+    Given kullanici amazon anasayfasina gider
+    Then  kullanici iphone aramasi yapar
+    And kullanici sonuclarin iphone icerdigini test eder
+    And kullanici sayfayi kapatir

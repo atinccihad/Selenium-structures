@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="istenen methodlar">
+    <test name="method">
+        <classes>
+            <class name="tests.i16.C03_priority">
+                <methods>
+                    <include name="bestBuyTesti"/>
+                </methods>
+            </class>
+            <class name="tests.i17.C02_HardAssert">
+                <methods>
+                    <exclude name="test01"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

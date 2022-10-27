@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="49.084">
-    <testcase classname="US1001_amazonsearch" name="TC01_Amazon Search Testi" time="30.399">
-        <system-out><![CDATA[Given kullanici amazon sayfasina gider......................................passed
-And iPhone icin arama yapar.................................................passed
-Then sonuclarin iPhone icerdigini test eder.................................passed
-Given kullanici amazon sayfasina gider......................................passed
-And tea pot icin arama yapar................................................passed
-Then sonuclarin tea pot icerdigini test eder................................passed
-Given kullanici amazon sayfasina gider......................................passed
-And flower icin arama yapar.................................................passed
-Then sonuclarin flower icerdigini test eder.................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="122.761">
+    <testcase classname="US1002 Background Used" name="TC01 kullanici amazonda kelime aratir" time="65.283">
+        <system-out><![CDATA[Given kullanici amazon anasayfasina gider...................................passed
+Then kullanici Nutella icin arama yapar.....................................passed
+And kullanici sonuclarin Nutella icerdigini test eder.......................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US1003 parametre ile stepdefinition olusturma" name="TC05_parametre kullanimi" time="18.066">
-        <system-out><![CDATA[Given kullanici amazon sayfasina gider......................................passed
-And "Java" icin arama yapar.................................................passed
-Then sonuclarin "Java" icerdigini test eder.................................passed
-And sayfayi kapatir.........................................................passed
+    <testcase classname="US1002 Background Used" name="TC02 kullanici amazonda kelime aratir" time="27.779">
+        <system-out><![CDATA[Given kullanici amazon anasayfasina gider...................................passed
+Then kullanici Selenium icin arama yapar....................................passed
+And kullanici sonuclarin Selenium icerdigini test eder......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1002 Background Used" name="TC03 kullanici amazonda kelime aratir" time="27.405">
+        <system-out><![CDATA[Given kullanici amazon anasayfasina gider...................................passed
+Then kullanici iphone aramasi yapar.........................................passed
+And kullanici sonuclarin iphone icerdigini test eder........................passed
+And kullanici sayfayi kapatir...............................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="class'lari paralel calistirma" parallel="classes" thread-count="2" verbose="3">
+             <!--
+             TestNG'de testlerimizi paralel calistirmak lolaydir
+             ANCAK testNG raporlama yapmaz
+             Eger rapor istiyorsaniz her bir test method'unuzu rapor alacak sekilde
+             yeniden dizayn etmelisiniz
+             Paralel calistirma icin
+             1- kac browser'in ayni anda calisacagina (thread-count)
+             2- Hangi testlerin calisacagina
+             3- Driver'larin gorev paylasimini hangi seviyeden yapacagina(parallel=package ,class ,testmethod)
+                karar vermemiz gerekiyor
+             verbose : xml dosyasi calistiktan sonra terminalde yazdirilan satirlarin az veya cok olmasini saglar
+             1- en az
+             10- en cok
+             -->
+<test name="i22 paralel calistirma">
+
+    <packages>
+        <package name="tests.i22"></package>
+    </packages>
+</test>
+
+</suite>
